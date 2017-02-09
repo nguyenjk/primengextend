@@ -1,0 +1,8 @@
+<div>
+    <h3 class="first">{{header}}</h3>
+    <div class="ui-g" class="radioButtonContent">
+        <div class="ui-g-12" *ngFor="let item of items; let i= index;">
+            <p-radioButton name="group" value="{{item}}" label="{{item}}" [(ngModel)]="selectedValue"></p-radioButton>
+        </div>
+    </div>
+</div>
